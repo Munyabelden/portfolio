@@ -1,0 +1,22 @@
+.intro{
+    margin: 0;
+    padding: 0;
+}
+
+.font-family-crete{
+    font-family: 'Crete-Round', sans-serif;
+}
+
+.font-family-inter{
+    font-family: "Inter", sans-serif;
+}
+
+.intro .intro-toolbar{
+    display: contents;
+    flex-direction: row;
+    background:  #3C3A39;
+}
+
+.primary-navigation{
+    visibility: hidden;
+}
