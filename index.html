@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/c373984c3f.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>My Portfolio</title>
     </head>
@@ -14,29 +14,30 @@
     <body>
         <header class="intro">
 
-            <div class="intro-toolbar">
-                    <h1 class="toolbar-logo font-family-inter">Belden Mugauri</h1>
+            <div class="toolbar">
 
-                    <button type="submit">
-                        <img src="images\Union.jpg" alt="menu logo">
+                    <h1 class="toolbar-logo font-family-roboto">Belden Mugauri</h1>
+
+                    <button class="menu-button" id="menu" aria-controls="navigation">
+                        <i class="fa-solid fa-bars"><span class="sr-only">Menu</span></i>
                     </button>
             
-                    <nav class="primary-navigation font-family-inter"> 
+                    <nav id="navigation" class="primary-navigation font-family-roboto"> 
 
                         <ul>
-                            <li class="nav-item font-family-inter">
+                            <li class="nav-item font-family-roboto">
                                 <a href="#">Portfolio</a>
                             </li>
                 
-                            <li class="nav-item font-family-inter">
+                            <li class="nav-item font-family-roboto">
                                 <a href="#">About</a>
                             </li>
                 
-                            <li class="nav-item font-family-inter"> 
+                            <li class="nav-item font-family-roboto"> 
                                 <a href="#">Contact</a> 
                             </li>
                 
-                            <li class="nav-item font-family-inter"> 
+                            <li class="nav-item "> 
                                 <a href="#"><img src="images\Rec.jpg" alt="Email logo"></a> 
                             </li>
                         </ul>
@@ -44,36 +45,42 @@
                     </nav>
             </div> 
 
-            <div class="primary-infor">
+            <div class="primary-content">
 
-                    <h1 class="primary-header font-family-crete">Hey there I'm Belden</h1>
-                    <span class="Supporting-text font-family-inter">I'm a Software Developer</span>
+                    <div class="primary-information">
 
-                    <p class="description font-family-inter">
-                        I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-                        don't hesitate to contact me.
-                    </p>
+                        <h1 class="primary-title font-family-crete">Hey there. <br> I'm Belden</h1>
+                        <span class="Supporting-text font-family-roboto">I'm a Software Developer</span>
+
+                        <p class="description font-family-poppins">
+                            I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+                            don't hesitate to contact me.
+                        </p>
+                </div>
+
+                <div class="social-media">
+
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-square-github"><span class="sr-only">github</span></i>
+                        </a>
+                        
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-twitter"><span class="sr-only">twitter</span></i>
+                        </a>
+
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-linkedin-in"><span class="sr-only">linkedin</span></i>
+                        </a>
+
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"><span class="sr-only">whatsapp</span></i>
+                        </a>
+
+                </div>
+
             </div>
 
-            <div class="social-media">
-
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img src="images\github.jpg" alt="github logo">
-                    </a>
-                    
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img src="images\twiter.jpg" alt="twitter logo">
-                    </a>
-
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img src="images\Vector.jpg" alt="medium logo">
-                    </a>
-
-                    <a href="#" target="_blank" rel="noopener noreferrer">
-                        <img src="images\angel list.jpg" alt="angel list logo">
-                    </a>
-
-            </div>
+            
 
         </header>
 
