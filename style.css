@@ -8,7 +8,7 @@
 .intro {
   width: 100%;  
   height: 100vh;
-  background: #ffffff;
+  background: #fff;
 }
 
 .sr-only {
@@ -18,7 +18,7 @@
 
 a { 
   text-decoration: none;
-  color: #fff5e1; 
+  color: #FFF5E1; 
 }
 
 ul {
@@ -39,7 +39,7 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: #ffffff;
+  background: #fff;
   color: #6070FF;
   margin: 0;
   padding: 8px 5%;
@@ -52,7 +52,7 @@ ul {
 }
 
 .menu-button {
-  background: #ffffff;
+  background: #fff;
   border: none;
   color: #6070FF;
   cursor: pointer;
@@ -72,14 +72,14 @@ ul {
   bottom: 58px;
   width: 100%;
   padding: 5% 30px;
-  color: #fff5e1;
+  color: #FFF5E1;
   transform: translateX(100%);
   -webkit-transition: transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out;
 }
 
 .primary-navigation .nav-item {
-  color: #fff5e1;
+  color: #FFF5E1;
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
@@ -88,7 +88,7 @@ ul {
 }
 
 .primary-content {
-  background: #ffffff;
+  background: #fff;
   margin-top: 0;
   padding: 6.5rem 5%;
   height: 80vh;
@@ -165,7 +165,7 @@ ul {
 }
 
 .social-media a {
-  background: #ffffff;
+  background: #fff;
   margin-inline: 10px;
   cursor: pointer;
   color: #505F79;
