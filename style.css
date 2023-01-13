@@ -147,7 +147,7 @@ ul {
 
 main {
   background: #fff;
-  width: 100%; 
+  width: 100%;
 }
 
 .columns {
@@ -241,7 +241,7 @@ main {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color:  #396df2;
+  color: #396df2;
   border: 2px solid #396df2;
   border-radius: 10px;
   padding: 8px 15px;
@@ -265,7 +265,7 @@ main {
   width: 90%;
 }
 
-.about-deatils{
+.about-deatils {
   display: flex;
   flex-direction: column;
 }
@@ -299,7 +299,7 @@ main {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  border-bottom: 1px solid #Dfe1e6;
+  border-bottom: 1px solid #dfe1e6;
   margin-block: 15px;
   padding: 18px 10px;
 }
