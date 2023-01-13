@@ -163,10 +163,3 @@ ul {
   align-items: center;
   margin-block: 10px;
 }
-
-.social-media a {
-  background: #fff;
-  margin-inline: 10px;
-  cursor: pointer;
-  color: #505f79;
-}
