@@ -46,6 +46,7 @@ ul {
 }
 
 .toolbar-logo {
+  color: #6070ff;
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
@@ -89,44 +90,17 @@ ul {
 
 .primary-content {
   background: #fff;
+  background-image: url('images/main-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   margin-top: 0;
-  padding: 6.5rem 5%;
+  padding-inline: 5%;
+  padding-block: 7rem 4rem;
   height: 80vh;
   overflow: hidden;
 }
 
 .primary-content img { position: absolute; }
-
-.elipse-3 {
-  display: block;
-  right: 0;
-  top: 4em;
-  left: auto;
-}
-
-.elipse-4 {
-  right: 50%;
-  left: 50%;
-  top: 4.5em;
-}
-
-.elipse-11 {
-  right: 20%;
-  left: 80%;
-  top: 80%;
-}
-
-.elipse-12 {
-  right: 80%;
-  left: 20%;
-  top: 90%;
-}
-
-.elipse-13 {
-  right: 90%;
-  left: 10%;
-  top: 6em;
-}
 
 .primary-title {
   font-family: 'Poppins', sans-serif;
