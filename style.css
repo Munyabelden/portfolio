@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.intro {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+
+.sr-only {
+  visibility: hidden;
+  position: absolute;
+}
+
+a {
+  text-decoration: none;
+  color: #fff5e1;
+}
+
+ul {
+  list-style: none;
+  color: #fff;
+}
+
+.font-family-poppins {
+  font-family: "POPPINS", sans-serif;
+}
+
+.font-family-roboto {
+  font-family: "ROBOTO", sans-serif;
+}
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  color: #6070ff;
+  margin: 0;
+  padding: 8px 5%;
+}
+
+.toolbar-logo {
+  color: #6070ff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.menu-button {
+  background: #fff;
+  border: none;
+  color: #6070ff;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+.primary-navigation {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #6070ff;
+  mix-blend-mode: multiply;
+  top: 0;
+  left: 0;
+  bottom: 58px;
+  width: 100%;
+  padding: 5% 30px;
+  color: #fff5e1;
+  transform: translateX(100%);
+  -webkit-transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+}
+
+.primary-navigation .nav-item {
+  color: #fff5e1;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.primary-content {
+  background: #fff;
+  background-image: url('images/main-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0;
+  padding-inline: 5%;
+  padding-block: 7rem 4rem;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.primary-content img { position: absolute; }
+
+.primary-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.37px;
+  color: #172b4d;
+  margin-block: 10px;
+  text-transform: capitalize;
+  overflow: hidden;
+}
+
+.description {
+  color: #505f79;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-block: 10px 6px;
+}
+
+.social-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-block: 10px;
+}
+
+.social-media a {
+  background: #fff;
+  margin-inline: 10px;
+  cursor: pointer;
+  color: #505f79;
+}
