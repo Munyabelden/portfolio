@@ -18,7 +18,7 @@
 
 a { 
   text-decoration: none;
-  color: #FFF5E1; 
+  color: #fff5e1;
 }
 
 ul {
@@ -40,7 +40,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  color: #6070FF;
+  color: #6070ff;
   margin: 0;
   padding: 8px 5%;
 }
@@ -54,7 +54,7 @@ ul {
 .menu-button {
   background: #fff;
   border: none;
-  color: #6070FF;
+  color: #6070ff;
   cursor: pointer;
   position: absolute;
   right: 1em;
@@ -65,21 +65,21 @@ ul {
   display: flex;
   flex-direction: column;
   position: absolute;
-  background-color: #6070FF;
+  background-color: #6070ff;
   mix-blend-mode: multiply;
   top: 0;
   left: 0;
   bottom: 58px;
   width: 100%;
   padding: 5% 30px;
-  color: #FFF5E1;
+  color: #fff5e1;
   transform: translateX(100%);
   -webkit-transition: transform 500ms ease-in-out;
   transition: transform 500ms ease-in-out;
 }
 
 .primary-navigation .nav-item {
-  color: #FFF5E1;
+  color: #fff5e1;
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
@@ -134,25 +134,25 @@ ul {
   font-size: 40px;
   line-height: 52px;
   letter-spacing: 0.37px;
-  color: #172B4D;
+  color: #172b4d;
   margin-block: 10px;
   text-transform: capitalize;
   overflow: hidden;
 }
 
 .description {
-  color: #505F79;
+  color: #505f79;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-block: 10px 6px ;
+  margin-block: 10px 6px;
 }
 
 .social-header {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
   margin-top: 5px;
   margin-bottom: 20px;
 }
@@ -168,8 +168,5 @@ ul {
   background: #fff;
   margin-inline: 10px;
   cursor: pointer;
-  color: #505F79;
+  color: #505f79;
 }
- 
-
-
