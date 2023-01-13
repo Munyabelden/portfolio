@@ -1,102 +1,175 @@
-.intro{
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
-.sr-only{
-    visibility: hidden;
-    position: absolute;
+.intro {
+  width: 100%;  
+  height: 100vh;
+  background: #ffffff;
 }
 
-.font-family-crete{
-    font-family: 'CRETE_ROUND', sans-serif;
+.sr-only {
+  visibility: hidden;
+  position: absolute;
 }
 
-.font-family-poppins{
-    font-family: "POPPINS", sans-serif;
+a { 
+  text-decoration: none;
+  color: #fff5e1; 
 }
 
-.font-family-roboto{
-    font-family: "ROBOTO", sans-serif;
+ul {
+  list-style: none;
+  color: #fff;
 }
 
- .toolbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background:  #3C3A39;
-    color: #ffffff;
-    margin: 0;
-    padding: 10px 5%;
+.font-family-poppins {
+  font-family: "POPPINS", sans-serif;
 }
 
-.toolbar-logo{
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
+.font-family-roboto {
+  font-family: "ROBOTO", sans-serif;
 }
 
-.menu-button{
-    background: #3C3A39;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  color: #6070FF;
+  margin: 0;
+  padding: 8px 5%;
 }
 
-.primary-navigation{
-    position: absolute;
-    visibility: hidden;
+.toolbar-logo {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.menu-button {
+  background: #ffffff;
+  border: none;
+  color: #6070FF;
+  cursor: pointer;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+
+.primary-navigation {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #6070FF;
+  mix-blend-mode: multiply;
+  top: 0;
+  left: 0;
+  bottom: 58px;
+  width: 100%;
+  padding: 5% 30px;
+  color: #fff5e1;
+  transform: translateX(100%);
+  -webkit-transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+}
+
+.primary-navigation .nav-item {
+  color: #fff5e1;
+  font-size: 32px;
+  line-height: 44px;
+  font-weight: 700;
+  padding: 10px 30px;
+  cursor: pointer;
 }
 
 .primary-content {
-    background: #1C1A19;
-    margin-top: 0;
-    padding: 6.5rem 5%;
-    height: 50vh;
+  background: #ffffff;
+  margin-top: 0;
+  padding: 6.5rem 5%;
+  height: 80vh;
+  overflow: hidden;
 }
 
-.primary-title{
-    font-family: 'CRETE_ROUND', sans-serif;
-    font-size: 56px;
-    line-height: 64px;
-    letter-spacing: 0.37px;
-    color: #FF6B00;
-    margin-block: 0;
-    text-transform: capitalize;
+.primary-content img { position: absolute; }
+
+.elipse-3 {
+  display: block;
+  right: 0;
+  top: 4em;
+  left: auto;
 }
 
-.Supporting-text{
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 32px;
+.elipse-4 {
+  right: 50%;
+  left: 50%;
+  top: 4.5em;
 }
 
-.description{
-    color: #ffffff;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+.elipse-11 {
+  right: 20%;
+  left: 80%;
+  top: 80%;
 }
 
-.social-media{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
+.elipse-12 {
+  right: 80%;
+  left: 20%;
+  top: 90%;
 }
 
-.social-media a{
-    background: #1C1A19;
-    margin-inline: 5px;
-    cursor: pointer;
-    color: #DBD8D7;
+.elipse-13 {
+  right: 90%;
+  left: 10%;
+  top: 6em;
 }
 
-.social-media a img{
-    background: #1C1A19;
-    width: 18px;
-    height: 20px;
-    color: #DBD8D7;
+.primary-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 0.37px;
+  color: #172B4D;
+  margin-block: 10px;
+  text-transform: capitalize;
+  overflow: hidden;
 }
+
+.description {
+  color: #505F79;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-block: 10px 6px ;
+}
+
+.social-header {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7F8CFF;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-block: 10px;
+}
+
+.social-media a {
+  background: #ffffff;
+  margin-inline: 10px;
+  cursor: pointer;
+  color: #505F79;
+}
+ 
+
 
