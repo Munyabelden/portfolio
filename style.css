@@ -281,13 +281,12 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
   color: #000;
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   border-bottom: 1px solid #dfe1e6;
-  margin-block: 15px;
+  margin-block: 25px 15px;
   padding: 18px 10px;
 }
 
@@ -305,18 +304,20 @@ main {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: 303px;
-  height: 66px;
+  margin-inline: 10px;
   background: #f7f7f9;
   border-radius: 8px;
   color: #344563;
-  overflow: hidden;
   padding-inline: 25px;
   justify-content: space-between;
 }
 
 .feature-items li span {
   overflow: hidden;
+}
+
+.feature-items li img {
+  margin-right: 20px;
 }
 
 .drop {
