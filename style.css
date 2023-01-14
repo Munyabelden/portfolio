@@ -7,7 +7,6 @@
 
 .intro {
   width: 100%;
-  height: 100vh;
   background: #fff;
 }
 
@@ -78,12 +77,15 @@ ul {
   background-size: cover;
   margin-top: 0;
   padding-inline: 5%;
-  padding-block: 7rem 4rem;
-  height: 80vh;
-  overflow: hidden;
+  padding-block: 6rem 4rem;
+  height: 100vh;
 }
 
-.primary-content img { position: absolute; }
+.primary-information{
+  height: 60%;
+  margin: 0;
+  padding: 0;
+}
 
 .primary-title {
   font-family: 'Poppins', sans-serif;
@@ -107,21 +109,22 @@ ul {
 
 .social-header {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   color: #7f8cff;
-  margin-top: 5px;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .social-media {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-block: 10px;
+  margin-top: 20px;
 }
 
 .social-media a {
+  font-size: 20px;
+  line-height: 24px;
   background: #fff;
   margin-inline: 10px;
   cursor: pointer;
@@ -245,7 +248,7 @@ main {
   grid-template-rows: auto;
   align-items: center;
   margin: 20px auto;
-  width: 90%;
+  width: 67%;
 }
 
 .about-deatils {
@@ -278,6 +281,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
   color: #000;
   font-weight: 500;
   font-size: 20px;
@@ -303,7 +307,7 @@ main {
   align-items: center;
   width: 303px;
   height: 66px;
-  border: 1px solid #f7f7f9;
+  background: #f7f7f9;
   border-radius: 8px;
   color: #344563;
   overflow: hidden;
@@ -313,4 +317,8 @@ main {
 
 .feature-items li span {
   overflow: hidden;
+}
+
+.drop {
+  color: #abc7c3;
 }
