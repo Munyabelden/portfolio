@@ -62,23 +62,6 @@ ul {
   top: 1em;
 }
 
-.primary-navigation {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  background-color: #6070ff;
-  mix-blend-mode: multiply;
-  top: 0;
-  left: 0;
-  bottom: 58px;
-  width: 100%;
-  padding: 5% 30px;
-  color: #fff5e1;
-  transform: translateX(100%);
-  -webkit-transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-}
-
 .primary-navigation .nav-item {
   color: #fff5e1;
   font-size: 32px;
@@ -304,7 +287,7 @@ main {
   padding: 18px 10px;
 }
 
-.features li p {
+.features li div {
   overflow: hidden;
 }
 
@@ -312,4 +295,22 @@ main {
   color: #abc7c3;
   font-size: 20px;
   line-height: 24px;
+}
+
+.feature-items li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 303px;
+  height: 66px;
+  border: 1px solid #f7f7f9;
+  border-radius: 8px;
+  color: #344563;
+  overflow: hidden;
+  padding-inline: 25px;
+  justify-content: space-between;
+}
+
+.feature-items li span {
+  overflow: hidden;
 }
