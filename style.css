@@ -333,7 +333,7 @@ main {
   background-image: url('images/contact form shapes-mobile.svg');
   background-repeat: no-repeat;
   background-position: 100%;
-  padding-block: 8rem 4rem;
+  padding-block: 8.5rem 4rem;
   padding-inline: 5%;
 }
 
@@ -344,6 +344,7 @@ main {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .mobile-footer p {
