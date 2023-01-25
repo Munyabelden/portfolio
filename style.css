@@ -126,7 +126,8 @@ ul {
   body {
     background: #e5e5e5;
   }
-  .toolbar{
+
+  .toolbar {
     padding: 12px 10%;
   }
 
@@ -134,7 +135,7 @@ ul {
     display: none;
   }
 
-  .nav-items{
+  .nav-items {
     display: flex;
     flex-direction: row;
     font-weight: 500;
@@ -181,8 +182,8 @@ main {
   align-items: center;
   justify-content: center;
   background: #fffafa;
-  align-self: center;
-  width: 75%; 
+  align-self: center; 
+  width: 75%;
   border: 1px solid #dfe1e6;
   border-radius: 10px;
   margin: 50px auto;
@@ -190,7 +191,7 @@ main {
 }
 
 .column-item img {
-  width: 100%
+  width: 100%;
 }
 
 .column-detail {
@@ -368,7 +369,6 @@ main {
 }
 
 @media (min-width: 768px) {
-
   .columns {
     background: #e5e5e5;
     padding-bottom: 7rem;
@@ -405,9 +405,9 @@ main {
 
   .row-reverse .column-detail {
     margin-right: 20px;
-    width: 50%;    
+    width: 50%;
   }
-  
+
   .about-me {
     margin-top: -80px;
     grid-template-columns: 1fr 1fr;
@@ -415,7 +415,7 @@ main {
     padding-block: 5rem 8rem;
   }
 
-  .about-details{
+  .about-details {
     width: 75%;
   }
 
@@ -429,23 +429,23 @@ main {
     flex-direction: row;
   }
 
- .feature-items li {
-   flex-direction: column;
-   width: 100px;
- }
+  .feature-items li {
+    flex-direction: column;
+    width: 100px;
+  }
 }
 
-.mobile-footer {
-  display: flex;
-  flex-direction: column;
-  margin-top: 30px;
-  background: #6070ff;
-  border-radius: 100px 0 0 0;
-  background-image: url('images/contact form shapes-mobile.svg');
-  background-repeat: no-repeat;
-  background-position: 100%;
-  padding-block: 8.5rem 4rem;
-  padding-inline: 5%;
+ .mobile-footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    background: #6070ff;
+    border-radius: 100px 0 0 0;
+    background-image: url('images/contact form shapes-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: 100%;
+    padding-block: 8.5rem 4rem;
+    padding-inline: 5%;
 }
 
 .form-title {
@@ -471,7 +471,6 @@ main {
   flex-direction: column;
   max-width: 450px;
   margin: 30px auto;
-  
 }
 
 .mobile-form input,
@@ -508,7 +507,6 @@ main {
 }
 
 @media (min-width: 768px) {
-
   .mobile-footer {
     background-image: url('images/contact form background shapes.svg');
     background-position: 90%;
