@@ -399,12 +399,12 @@ main {
   }
 
   .row .column-detail {
-    margin-left: 20px;
+    margin-left: 40px;
     width: 50%;
   }
 
   .row-reverse .column-detail {
-    margin-right: 20px;
+    margin-right: 40px;
     width: 50%;
   }
 
