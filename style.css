@@ -60,6 +60,11 @@ ul {
   top: 1em;
 }
 
+.nav-items {
+  position: absolute;
+  visibility: none;
+}
+
 .primary-content {
   background: #fff;
   background-image: url('images/header-shapes mobile@2x.svg');
