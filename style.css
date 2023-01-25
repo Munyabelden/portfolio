@@ -182,7 +182,7 @@ main {
   align-items: center;
   justify-content: center;
   background: #fffafa;
-  align-self: center; 
+  align-self: center;
   width: 75%;
   border: 1px solid #dfe1e6;
   border-radius: 10px;
@@ -435,17 +435,17 @@ main {
   }
 }
 
- .mobile-footer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    background: #6070ff;
-    border-radius: 100px 0 0 0;
-    background-image: url('images/contact form shapes-mobile.svg');
-    background-repeat: no-repeat;
-    background-position: 100%;
-    padding-block: 8.5rem 4rem;
-    padding-inline: 5%;
+.mobile-footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  background: #6070ff;
+  border-radius: 100px 0 0 0;
+  background-image: url('images/contact form shapes-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: 100%;
+  padding-block: 8.5rem 4rem;
+  padding-inline: 5%;
 }
 
 .form-title {
