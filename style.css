@@ -172,13 +172,13 @@ main {
 }
 
 .columns {
-  background: #e5e5e5;  
+  background: #e5e5e5;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   align-items: center;
   padding-block: 100px;
-  margin:0 auto;
+  margin: 0 auto;
   width: 100%;
 }
 
@@ -344,7 +344,7 @@ main {
 .features li i {
   color: #abc7c3;
   font-size: 20px;
-}  
+}
 
 .feature-items li {
   display: flex;
@@ -468,7 +468,7 @@ main {
   font-weight: 400;
   font-size: 20px;
   text-align: center;
-  max-width: 570px;
+  max-width: 550px;
   margin-inline: auto;
 }
 
