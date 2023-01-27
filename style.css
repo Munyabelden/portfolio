@@ -282,6 +282,7 @@ main {
   width: fit-content;
   cursor: pointer;
   margin-top: 20px;
+  transition: all 500ms ease-in-out;
 }
 
 .column-button:hover,
@@ -504,6 +505,7 @@ main {
   cursor: pointer;
   margin-top: 10px;
   background: #fff;
+  transition: all 500ms ease-in-out;
 }
 
 .form-button:hover,
