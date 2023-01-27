@@ -41,7 +41,7 @@ ul {
   color: #6070ff;
   margin: 0;
   padding: 8px 5%;
-  animation: trans 1s;
+  animation: trans 1s ease-in-out;
 }
 
 @keyframes trans {
@@ -87,8 +87,7 @@ ul {
   padding-block: 6rem 4rem;
   height: 100vh;
   border-radius: 0 0 0 100px;
-  animation-delay: 10s;
-  animation: fadeIn 4s;
+  animation: fadeIn 3s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -97,7 +96,7 @@ ul {
   }
 
   to {
-   opacity: 1;
+    opacity: 1;
   }
 }
 
