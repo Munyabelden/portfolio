@@ -41,6 +41,17 @@ ul {
   color: #6070ff;
   margin: 0;
   padding: 8px 5%;
+  animation: trans 1s;
+}
+
+@keyframes trans {
+  from {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 
 .toolbar-logo {
@@ -76,6 +87,18 @@ ul {
   padding-block: 6rem 4rem;
   height: 100vh;
   border-radius: 0 0 0 100px;
+  animation-delay: 10s;
+  animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+   opacity: 1;
+  }
 }
 
 .primary-information {
@@ -385,7 +408,7 @@ main {
 
   .column-item:hover {
     border: 2px solid #a7aeff;
-    box-shadow: 0 0 20px 0 rgb(167, 174, 255);
+    box-shadow: 0 0 20px 20px rgb(167, 174, 255);
   }
 
   .row {
