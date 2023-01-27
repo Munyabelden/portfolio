@@ -380,6 +380,7 @@ main {
     padding-inline: 30px;
     width: 75%;
     background: #fff;
+    transition: all 500ms ease-in-out;
   }
 
   .column-item:hover {
