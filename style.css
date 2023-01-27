@@ -41,6 +41,17 @@ ul {
   color: #6070ff;
   margin: 0;
   padding: 8px 5%;
+  animation: trans 1s ease-in-out;
+}
+
+@keyframes trans {
+  from {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 
 .toolbar-logo {
@@ -76,6 +87,17 @@ ul {
   padding-block: 6rem 4rem;
   height: 100vh;
   border-radius: 0 0 0 100px;
+  animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 .primary-information {
@@ -282,6 +304,7 @@ main {
   width: fit-content;
   cursor: pointer;
   margin-top: 20px;
+  transition: all 500ms ease-in-out;
 }
 
 .column-button:hover,
@@ -379,11 +402,12 @@ main {
     padding-inline: 30px;
     width: 75%;
     background: #fff;
+    transition: all 500ms ease-in-out;
   }
 
   .column-item:hover {
     border: 2px solid #a7aeff;
-    box-shadow: 0 0 20px 0 rgb(167, 174, 255);
+    box-shadow: 0 0 20px 20px rgb(167, 174, 255);
   }
 
   .row {
@@ -504,6 +528,7 @@ main {
   cursor: pointer;
   margin-top: 10px;
   background: #fff;
+  transition: all 500ms ease-in-out;
 }
 
 .form-button:hover,
