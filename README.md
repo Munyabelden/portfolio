@@ -31,7 +31,7 @@
 
 **Portfolio Mobile page is a step by step project on building a personal portfolio to use on applications and advertising myself. 
 
-##  Link to portfolio page <a name="portfolio-page" href="https://munyabelden.github.io/PortfolioMobilePage/">My Portfolio</a>
+##  Link to <a name="portfolio-page" href="https://munyabelden.github.io/">My Portfolio</a>
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -120,7 +120,7 @@ To run tests, run the following command:
 ### Deployment
 
 You can deploy this project using: Github Pages
-<a href="https://munyabelden.github.io/PortfolioMobilePage/"></a>
+<a href="https://munyabelden.github.io/"></a>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
