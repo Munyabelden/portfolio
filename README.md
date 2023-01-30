@@ -31,7 +31,7 @@
 
 **Portfolio Mobile page is a step by step project on building a personal portfolio to use on applications and advertising myself. 
 
-##  Link to <a name="portfolio-page" href="https://munyabelden.github.io/">My Portfolio</a>
+##  Link to my Portfolio <a name="portfolio-page" href="https://munyabelden.github.io/">https://munyabelden.github.io/</a>
 
 
 ## 🛠 Built With <a name="built-with"></a>
