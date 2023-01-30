@@ -110,7 +110,7 @@ To run the project, execute the following command:
 
 -_create a index .html file
 -Make sure Live-server Extention is installed on your code editor
--Right click and select live server
+-Right click and select live server 
 
 ### Run tests
 
@@ -119,7 +119,8 @@ To run tests, run the following command:
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using: Github Pages
+<a href="https://munyabelden.github.io/PortfolioMobilePage/"></a>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
