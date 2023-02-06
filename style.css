@@ -74,7 +74,7 @@ ul {
     top: 1em;
     cursor: pointer;
   }
-  
+
   .menu-exit {
     background: none;
     color: #fff;
@@ -144,7 +144,7 @@ ul {
 }
 
 .primary-title {
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 40px;
   letter-spacing: 0.37px;
@@ -192,7 +192,8 @@ ul {
     align-items: center;
   }
 
-  .menu, .menu-exit {
+  .menu, 
+  .menu-exit {
     display: none;
   }
 
@@ -204,7 +205,7 @@ ul {
     align-items: center;
     background: #fff;
     margin-top: 0;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     padding-inline: 20px 0;
     font-size: 15px;
