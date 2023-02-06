@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/c373984c3f.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <script src="index.js" defer></script>
         <title>Belden Full Stack Developer</title>
@@ -17,14 +18,14 @@
 
             <div class="toolbar">
                     <a href="#" class="toolbar-logo font-family-roboto">Belden Mugauri</a>
-                    <button id="menu-btn" class="menu-btn" aria-controls="nav-bar"
+                    <button id="menu-btn" class=" menu-btn" aria-controls="nav-bar"
                     ><i class="fa-solid fa-bars "><span class="sr-only">Menu</span></i></button>
                     <nav class="nav-bar" id="nav-bar" data-visible="false">
                         <button class="menu-exit" id="exit-btn" aria-controls="nav-bar" type="button"><i class="fa-solid fa-xmark"></i><span class="sr-only">Exit</span></button>
                         <ul class="nav-items ">
-                            <li> <a class="nav-item" href="#">Portfolio</a></li>
-                            <li> <a class="nav-item" href="#">About</a></li>
-                            <li> <a class="nav-item" href="#">Contacts</a></li>
+                            <li> <a  class="nav-item active" href="#home">Portfolio</a></li>
+                            <li> <a  class="nav-item" href="#about">About</a></li>
+                            <li> <a class="nav-item" href="#contact">Contacts</a></li>
                         </ul>
                     </nav>
             </div> 
@@ -78,9 +79,9 @@
             </section>  
         </header>
 
-       <main>
+       <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
 
-        <section class="columns font-family-poppins">
+        <section class="columns font-family-poppins" >
 
           <div class="col-1 column-item row">
             <img src="images\snap.jpg" alt="Snapshot">
@@ -196,7 +197,7 @@
            
         </section>
 
-        <section class="about-me font-family-poppins">
+        <section class="about-me font-family-poppins" id="about">
            
             <div  class="about-details">
                 <h2 class="about-title">About <br> Myself</h2>
@@ -270,7 +271,7 @@
         </section>
        </main>
 
-       <footer id="contact" class="mobile-footer">
+       <footer id="contact" class="mobile-footer" data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
          <h2 class="form-title font-family-poppins">Contact me</h2>
          <p class="font-family-poppins">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it </p>
 
@@ -285,6 +286,8 @@
          </form>
 
        </footer>
-
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     </body>
 </html>

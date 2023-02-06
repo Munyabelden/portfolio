@@ -62,6 +62,10 @@ ul {
   font-size: 18px;
 }
 
+.menu-btn {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .menu-btn {
     display: block;
@@ -172,6 +176,7 @@ ul {
   flex-direction: row;
   align-items: center;
   margin-top: 10px;
+  margin-left: -30px;
 }
 
 .social-media a {
