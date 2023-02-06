@@ -8,6 +8,7 @@
         <script src="https://kit.fontawesome.com/c373984c3f.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
+        <script src="index.js" defer></script>
         <title>Belden Full Stack Developer</title>
     </head>
 
@@ -15,21 +16,16 @@
         <header id="home" class="intro">
 
             <div class="toolbar">
-
                     <a href="#" class="toolbar-logo font-family-roboto">Belden Mugauri</a>
-  
-                    <nav id="nav-bar"  > 
-
-                        <button class="menu-button" id="menu-btn" aria-controls="nav-bar">
-                            <i class="fa-solid fa-bars"><span class="sr-only">Menu</span></i>
-                        </button>
-
-                        <ul class="nav-items font-family-poppins">
-                          <li class="nav-item"><a href="home"> Portfolio</a></li>
-                          <li class="nav-item"><a href="about-me">About</a></li>
-                          <li class="nav-item"><a href="contact">Contact</a></li>
+                    <button id="menu-btn" class="menu-btn" aria-controls="nav-bar"
+                    ><i class="fa-solid fa-bars "><span class="sr-only">Menu</span></i></button>
+                    <nav class="nav-bar" id="nav-bar" data-visible="false">
+                        <button class="menu-exit" id="exit-btn" aria-controls="nav-bar" type="button"><i class="fa-solid fa-xmark"></i><span class="sr-only">Exit</span></button>
+                        <ul class="nav-items ">
+                            <li> <a class="nav-item" href="#">Portfolio</a></li>
+                            <li> <a class="nav-item" href="#">About</a></li>
+                            <li> <a class="nav-item" href="#">Contacts</a></li>
                         </ul>
-
                     </nav>
             </div> 
 

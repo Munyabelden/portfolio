@@ -6,8 +6,9 @@
 }
 
 .intro {
-  width: 100%;
   background: #e5e5e5;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .sr-only {
@@ -40,7 +41,8 @@ ul {
   background: #fff;
   color: #6070ff;
   margin: 0;
-  padding: 8px 5%;
+  padding: 20px 5%;
+  overflow-x: hidden;
 }
 
 .toolbar-logo {
@@ -49,21 +51,59 @@ ul {
   font-size: 18px;
 }
 
-.menu-button {
-  display: block;
-  background: #fff;
-  border: none;
-  color: #6070ff;
-  cursor: pointer;
-  position: absolute;
-  right: 1em;
-  top: 1em;
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+    background: #fff;
+    border: none;
+    font-size: 18px;
+    color: #6070ff;
+    position: absolute;
+    right: 1.5em;
+    top: 1em;
+    cursor: pointer;
+  }
+  
+  .menu-exit {
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 22px;
+    margin-top: -50px;
+    margin-inline: auto .3em;
+    cursor: pointer;
+  }
+  
+  .nav-items .nav-item {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 32px;
+    font-weight: 600;
+  }
+    
+  .nav-bar{
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 0;
+    transform: translateX(100%);
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #fff;
+    background: rgba(96, 112, 255, 0.9);
+    padding-top: 70px;
+    padding-inline: 40px 5%;
+    margin: 0;
+    transition: all 500ms;
+  }
+  
+  .nav-bar[data-visible="true"]{
+    transform: translateX(0%);
+  }
+  
 }
 
-.nav-items {
-  position: absolute;
-  display: none;
-}
 
 .primary-content {
   background: #fff;
@@ -132,23 +172,32 @@ ul {
     align-items: center;
   }
 
-  .menu-button {
+  .menu, .menu-exit {
     display: none;
   }
 
   .nav-items {
+    z-index: 100;
+    position: relative;
     display: flex;
     flex-direction: row;
-    position: relative;
     align-items: center;
+    background: #fff;
+    margin-top: 0;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
+    padding-inline: 20px 0;
     font-size: 15px;
     right: 10px;
   }
 
   .nav-items .nav-item {
+    z-index: 100;
+    font-family: 'Poppins', sans-serif;
     color: #344563;
     margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500px;
   }
 
   .primary-content {
