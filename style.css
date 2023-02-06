@@ -43,6 +43,17 @@ ul {
   margin: 0;
   padding: 20px 5%;
   overflow-x: hidden;
+  animation: trans 1s ease-in-out;
+}
+
+@keyframes trans {
+  from {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 
 .toolbar-logo {
@@ -70,23 +81,23 @@ ul {
     border: none;
     font-size: 22px;
     margin-top: -50px;
-    margin-inline: auto .3em;
+    margin-inline: auto 0.3em;
     cursor: pointer;
   }
-  
+
   .nav-items .nav-item {
     color: #fff;
     margin-bottom: 40px;
     font-size: 32px;
     font-weight: 600;
   }
-    
-  .nav-bar{
+
+  .nav-bar {
     position: fixed;
     z-index: 1000;
     inset: 0 0 0 0;
     transform: translateX(100%);
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -97,13 +108,11 @@ ul {
     margin: 0;
     transition: all 500ms;
   }
-  
-  .nav-bar[data-visible="true"]{
+
+  .nav-bar[data-visible="true"] {
     transform: translateX(0%);
   }
-  
 }
-
 
 .primary-content {
   background: #fff;
@@ -124,7 +133,7 @@ ul {
 }
 
 .primary-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins',sans-serif;
   font-weight: 700;
   font-size: 40px;
   letter-spacing: 0.37px;
@@ -184,7 +193,7 @@ ul {
     align-items: center;
     background: #fff;
     margin-top: 0;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins',sans-serif;
     font-weight: 500;
     padding-inline: 20px 0;
     font-size: 15px;
