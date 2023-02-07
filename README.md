@@ -66,7 +66,7 @@
 
 ## 🚀 Live Demo
 
-- Live demo link <a name="live-demo" href="https://munyabelden.github.io/">https://munyabelden.github.io/</a>
+- Live demo link <a name="live-demo" href="https://munyabelden.github.io/" target="_blank">https://munyabelden.github.io/</a>
 
 
 

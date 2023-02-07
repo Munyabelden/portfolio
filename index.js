@@ -1,25 +1,27 @@
-const navBar = document.querySelector('#nav-bar');
-const menuBtn = document.querySelector('#menu-btn');
-const exitBtn = document.querySelector('#exit-btn');
-const links = document.querySelectorAll('.nav-item');
-    
 
+const popUpCard = document.querySelectorAll('[data-modal-target]');
+const closeCard = document.querySelectorAll('[data-close]'); 
 
-const menuActivity = () => {
-    const visibility = navBar.getAttribute('data-visible');
-    if(visibility === 'false'){
-        navBar.setAttribute('data-visible', true)
-    }else if(visibility === 'true'){
-        navBar.setAttribute('data-visible', false)
-    }
-}
-
-menuBtn.addEventListener('click', menuActivity );
-exitBtn.addEventListener('click', menuActivity );
-
-links.forEach( link => {
-    const visibility = navBar.getAttribute('data-visible');
-    link.addEventListener('click', () => {
-        navBar.setAttribute('data-visible', false)
+popUpCard.forEach(button => {
+    button.addEventListener('click', () => {
+      const card = document.querySelector(button.dataset.modalTarget)
+      popUp(card)
     })
-})
+  })
+
+  function popUp(card) {
+    if (card == null) return
+    card.classList.add('active')
+ }
+
+ closeCard.forEach(button => {
+    button.addEventListener('click', () => {
+      const card = button.closest('.card')
+      remove(card)
+    })
+  })
+
+ function remove(card){
+    if(card == null)return
+    card.classList.remove('active')
+ }
