@@ -98,10 +98,14 @@ popUpCard.forEach(button => {
     card.classList.add('active')
  }
 
+<<<<<<< HEAD
  const closeCard = document.querySelectorAll('[data-close]'); 
 
  closeCard.forEach(button => {
    createCard();
+=======
+ closeCard.forEach(button => {
+>>>>>>> aea3f3c20f4c10358e2ec36f466171e4decf4f4b
     button.addEventListener('click', () => {
       const card = button.closest('.card')
       remove(card)
