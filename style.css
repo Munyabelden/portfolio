@@ -723,3 +723,19 @@ main {
     margin-inline: auto;
   }
 }
+
+.error i {
+  color: red;
+}
+
+.success i {
+  color: rgb(102, 210, 69);
+}
+
+.success,
+.error {
+  position: absolute;
+  font-size: 22px;
+  right: 22.5%;
+  margin-top: -55px;
+}
