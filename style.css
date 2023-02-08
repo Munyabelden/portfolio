@@ -389,7 +389,7 @@ main {
 }
 
 .card.active {
-  transform: scale(1);  
+  transform: scale(1);
 }
 
 .card-details {
@@ -401,7 +401,7 @@ main {
   z-index: 100;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0px 0px 0px 1000px rgba(193, 199, 208, 0.9);
+  box-shadow: 0 0 0 1000px rgba(193, 199, 208, 0.9);
   margin: 0 auto;
   pointer-events: all;
   max-width: 400px;
@@ -505,7 +505,6 @@ main {
   margin-right: 5px;
   cursor: pointer;
   transition: all 500ms ease-in-out;
-
 }
 
 .card-button:hover,
@@ -524,7 +523,7 @@ main {
   border: none;
   outline: none;
   background: none;
-  color:#67798e;
+  color: #67798e;
   font-size: 26px;
   top: 15px;
   right: 15px;
@@ -678,6 +677,11 @@ main {
     width: 122px;
   }
 
+  .card-button img {
+    width: 20px;
+    margin-left: 2px;
+  }
+
   .feature-items li img {
     margin-bottom: 10px;
   }
@@ -712,7 +716,6 @@ main {
     display: flex;
     flex-direction: row;
     margin-left: -15px;
-
   }
 
   .card-links-visible {
@@ -730,7 +733,7 @@ main {
     height: 100%;
     margin-top: 15px;
   }
-  
+
   .card-description p {
     font-size: 15px;
     line-height: 22px;
@@ -753,11 +756,6 @@ main {
 
   .card-button {
     padding: 2px 15px;
-  }
-
-  .card-button img {
-    width: 20px;
-    margin-left: 2px;
   }
 
   .hidden {
