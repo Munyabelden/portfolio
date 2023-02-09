@@ -6,7 +6,7 @@
     year: '2015',
     image: './images/Portfolio.jpg',
     large: './images/Portfolio3x.png',
-    description:'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    description:'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends. Lorem Ipsum is simply dummy text of the printing and typesetting industry',
     message:' Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s.',
     html: 'html',
     css: 'css',

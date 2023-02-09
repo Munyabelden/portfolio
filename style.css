@@ -403,8 +403,8 @@ main {
   box-shadow: 0 0 0 1000px rgba(193, 199, 208, 0.9);
   margin: 0 auto;
   pointer-events: all;
-  width: 96%;
-  max-width: 400px;
+  width: 95%;
+  max-width: 380px;
   padding-block: 1.5%;
   padding-inline: 4%;
   text-align: start;
@@ -448,7 +448,7 @@ main {
 
 .card-img {
   width: 100%;
-  height: 280px;
+  height: 260px;
   margin-bottom: -5px;
 }
 
@@ -626,7 +626,7 @@ main {
   color: #abc7c3;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   .columns {
     background: #e5e5e5;
     padding-bottom: 7rem;
