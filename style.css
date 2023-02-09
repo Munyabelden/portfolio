@@ -708,9 +708,9 @@ main {
     padding-block: 10px;
   }
 
-  .card-details{
+  .card-details {
     max-width: 800px;
-    padding-inline:  3%;
+    padding-inline: 3%;
     padding-block: 15px;
     height: 97%;
   }
@@ -718,7 +718,7 @@ main {
   .card-canopy {
     margin-block: 10px;
   }
- 
+
   .card-images .image-large {
     display: block;
     width: 700px;
@@ -732,8 +732,8 @@ main {
   }
 
   .card-inform {
-   display: flex;
-   flex-direction: row;
+    display: flex;
+    flex-direction: row;
   }
 
   .card-description {
@@ -742,13 +742,13 @@ main {
   }
 
   .close-card {
-    top: 5px
+    top: 5px;
   }
 
   .card-links {
     margin-top: 15px;
   }
- 
+
   .card-img,
   .show {
     display: none;
