@@ -710,7 +710,7 @@ main {
 
   .card-details {
     max-width: 800px;
-    padding-inline: 3%;
+    padding-inline: 4%;
     padding-block: 15px;
     height: 97%;
   }
@@ -722,7 +722,7 @@ main {
   .card-images .image-large {
     display: block;
     width: 700px;
-    height: 320px;
+    max-height: 320px;
     margin-top: 15px;
   }
 
