@@ -8,6 +8,7 @@
 .intro {
   background: #e5e5e5;
   width: 100%;
+  position: relative;
   overflow-x: hidden;
 }
 
@@ -289,7 +290,6 @@ main {
 .col-title {
   font-weight: 700;
   font-size: 32px;
-  line-height: 44px;
   color: #172b4d;
   margin-block: 15px;
 }
@@ -405,16 +405,17 @@ main {
   pointer-events: all;
   width: 96%;
   max-width: 400px;
-  padding-block: 3%;
+  padding-block: 1.5%;
   padding-inline: 4%;
   text-align: start;
 }
 
 .card-title {
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: 32px;
   color: #172b4d;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   text-align: start;
 }
 
@@ -424,27 +425,29 @@ main {
   align-items: center;
   justify-content: flex-start;
   text-align: left;
-  margin-top: 0;
-  margin-bottom: 5px;
+  margin-top: -2px;
+  margin-bottom: 10px;
   margin-left: -30px;
 }
 
 .card-item {
+  font-family: 'Poppins', sans-serif;
   color: #7a869a;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 15px;
   margin-left: 5px;
 }
 
 .can-card {
+  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
   color: #344563;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .card-img {
-  width: 80%;
+  width: 100%;
   height: 280px;
   margin-bottom: -5px;
 }
@@ -453,41 +456,53 @@ main {
   display: none;
 }
 
-.card-information {
+.card-inform {
   display: flex;
   flex-direction: column;
+  text-align: start;
+  width: 100%;
 }
 
-.show {
-  font-size: 13px;
-  line-height: 16px;
-  margin-bottom: -6px;
-}
-
-.links {
+.card-description {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  justify-content: flex-start;
+  margin-block: 10px;
+  color: rgba(52, 69, 99, 1);
+  font-weight: 400;
+  font-size: 15px
+  font-family: 'Poppins', sans-serif;
 }
 
-.card-links-visible {
+.card-button-links {
+  margin-left: 0;
+  padding: 0;
+}
+
+.card-links {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(235, 236, 240, 1);
+}
+
+.card-link-visible,
+.card-link-hidden {
   display: flex;
   flex-direction: row;
-  margin-left: -30px;
-  color: #396df2;
-  margin-top: -10px;
-  margin-bottom: 20px;
+  margin-left: -35px;
+  margin-bottom: 15px;
+  color: #6070ff;
 }
 
 .card-link {
-  background: #ebebff;
-  border-radius: 8px;
-  padding: 4px 12px;
-  font-weight: 500;
   font-size: 12px;
-  margin-right: -10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   color: #396df2;
+  background: #ebebff;
+  width: fit-content;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin-right: -5px;
 }
 
 .hidden {
@@ -495,6 +510,7 @@ main {
 }
 
 .card-button {
+  font-family: 'Poppins', sans-serif;
   text-transform: capitalize;
   font-weight: 500;
   font-size: 15px;
@@ -527,8 +543,8 @@ main {
   background: none;
   color: #67798e;
   font-size: 26px;
-  top: 15px;
-  right: 15px;
+  top: 5px;
+  right: 20px;
 }
 
 .about-me {
@@ -688,70 +704,51 @@ main {
     margin-bottom: 10px;
   }
 
-  .card-details {
+  .card {
+    padding-block: 10px;
+  }
+
+  .card-details{
     max-width: 800px;
-    padding: 1% 2%;
+    padding-inline:  3%;
+    padding-block: 15px;
+    height: 97%;
   }
 
-  .card-information {
-    display: flex;
-    flex-direction: row;
-    margin-top: 5px;
-    margin-bottom: -15px;
+  .card-canopy {
+    margin-block: 10px;
   }
-
-  .card-head {
-    margin: 0;
-  }
-
-  .card-links {
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-    width: 300px;
-    margin-left: -10px;
-    margin-right: auto;
-  }
-
-  .card-links-visible,
-  .card-links-hidden {
-    display: flex;
-    flex-direction: row;
-    margin-left: -15px;
-  }
-
-  .card-links-visible {
-    margin-bottom: 0;
-    margin-left: -20px;
-  }
-
-  .card-images {
-    width: 100%;
-    height: 320px;
-  }
-
-  .card-images .card-image {
+ 
+  .card-images .image-large {
     display: block;
-    width: 760px;
-    height: 100%;
+    width: 700px;
+    height: 320px;
     margin-top: 15px;
   }
 
-  .card-description p {
-    font-size: 15px;
-    line-height: 22px;
-    margin-top: 10px;
+  .card-title {
+    margin-top: 20px;
+    margin-bottom: -7px;
+  }
+
+  .card-inform {
+   display: flex;
+   flex-direction: row;
+  }
+
+  .card-description {
+    width: 60%;
     margin-right: 5px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
   }
 
-  .card-link {
-    margin-bottom: 10px;
-    margin-right: -5px;
+  .close-card {
+    top: 5px
   }
 
+  .card-links {
+    margin-top: 15px;
+  }
+ 
   .card-img,
   .show {
     display: none;
