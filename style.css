@@ -626,7 +626,7 @@ main {
   color: #abc7c3;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   .columns {
     background: #e5e5e5;
     padding-bottom: 7rem;
