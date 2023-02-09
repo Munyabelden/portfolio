@@ -9,7 +9,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
-        <script src="index.js" defer></script>
+        <script src="nav.js" defer></script>
+        <script  src="index.js" defer></script>
         <title>Belden Full Stack Developer</title>
     </head>
 
@@ -71,7 +72,6 @@
                         <img src="images\angellist.svg" alt="angellist"><span class="sr-only">github</span></i>
                         </a>
                     </li>
-
                     
                 </ul>
                 
@@ -83,7 +83,7 @@
 
         <section class="columns font-family-poppins" >
 
-          <div class="col-1 column-item row">
+          <div class="col-1 column-item switch">
             <img src="images\snap.jpg" alt="Snapshot">
             <div class="column-detail">
                 <h2 class="col-title">Tonic</h2>
@@ -104,9 +104,10 @@
                    <li class="column-link"><a href="#">javascript</a></li>
                 </ul>
    
-   
-                <a href="" class="column-button"> see project</a>
+    
+                <button id="0" type="button" class="column-button"> see project</button>
 
+                </div>
             </div>
           </div>
 
@@ -127,18 +128,18 @@
     
                 <ul class="column-links">
                    <li class="column-link"><a href="#">html</a></li>
-                   <li class="column-link"><a href="#">ruby on rails</a></li>
+                   <li class="column-link hidden"><a href="#">ruby on rails</a></li>
                    <li class="column-link"><a href="#">css</a></li>
                    <li class="column-link"><a href="#">javascript</a></li>
                 </ul>
     
     
-                <a href="" class="column-button"> see project</a>
-
+                <button id="1" type="button" class="column-button"> see project</button>
+          
             </div>
-         </div>
+          </div>
 
-         <div class="col-1 column-item row">
+         <div class="col-1 column-item switch">
             <img src="images\Portfolio.jpg" alt="Snapshot">
             <div class="column-detail">
                 <h2 class="col-title">Facebook 360</h2>
@@ -155,19 +156,18 @@
     
                 <ul class="column-links">
                    <li class="column-link"><a href="#">html</a></li>
-                   <li class="column-link"><a href="#">ruby on rails</a></li>
+                   <li class="column-link hidden"><a href="#">ruby on rails</a></li>
                    <li class="column-link"><a href="#">css</a></li>
                    <li class="column-link"><a href="#">javascript</a></li>
                 </ul>
     
     
-                <a href="" class="column-button"> see project</a>
-
+                <button id="2" class="column-button"> see project</button>
             </div>
          </div>
 
          <div class="col-1 column-item row-reverse">
-            <img src="images\Snapshoot (1).jpg" alt="Snapshot">
+            <img src="images\available.jpg" alt="Snapshot">
             <div class="column-detail">
                 
             <h2 class="col-title">Uber Navigation</h2>
@@ -184,17 +184,20 @@
 
             <ul class="column-links">
                <li class="column-link"><a href="#">html</a></li>
-               <li class="column-link"><a href="#">ruby on rails</a></li>
+               <li class="column-link hidden"><a href="#">ruby on rails</a></li>
                <li class="column-link"><a href="#">css</a></li>
                <li class="column-link"><a href="#">javascript</a></li>
             </ul>
 
 
-            <a href="" class="column-button">see project</a>
-            </div>
-         </div>
-
+            <button id="3" type="button" class="column-button"> see project</button>
+        </div>
+      </div>
            
+        </section>
+
+        <section class="card">
+            <div class="card-item"></div>
         </section>
 
         <section class="about-me font-family-poppins" id="about">

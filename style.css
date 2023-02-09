@@ -8,6 +8,7 @@
 .intro {
   background: #e5e5e5;
   width: 100%;
+  position: relative;
   overflow-x: hidden;
 }
 
@@ -23,6 +24,11 @@ a {
 ul {
   list-style: none;
   color: #fff;
+}
+
+div {
+  margin: 0;
+  padding: 0;
 }
 
 .font-family-poppins {
@@ -107,6 +113,8 @@ ul {
     align-items: start;
     color: #fff;
     background: rgba(96, 112, 255, 0.9);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     padding-top: 70px;
     padding-inline: 40px 5%;
     margin: 0;
@@ -223,7 +231,7 @@ ul {
     color: #344563;
     margin-right: 10px;
     font-size: 15px;
-    font-weight: 500px;
+    font-weight: 500;
   }
 
   .primary-content {
@@ -282,7 +290,6 @@ main {
 .col-title {
   font-weight: 700;
   font-size: 32px;
-  line-height: 44px;
   color: #172b4d;
   margin-block: 15px;
 }
@@ -298,6 +305,7 @@ main {
   color: #344563;
   font-weight: 600;
   font-size: 13px;
+  margin-left: -30px;
   margin-right: 5px;
 }
 
@@ -305,8 +313,8 @@ main {
   color: #7a869a;
   font-weight: 600;
   font-size: 13px;
+  margin-left: 0;
   margin-right: 5px;
-  overflow: hidden;
 }
 
 .can-items span {
@@ -325,6 +333,7 @@ main {
 .column-links {
   display: flex;
   flex-direction: row;
+  margin-left: -35px;
   margin-bottom: 15px;
   color: #6070ff;
 }
@@ -339,7 +348,6 @@ main {
   padding: 4px 12px;
   font-weight: 500;
   font-size: 12px;
-  line-height: 16px;
   margin-right: 4px;
   margin-bottom: 20px;
 }
@@ -364,6 +372,179 @@ main {
 .column-button:focus {
   background-color: #396df2;
   color: #fff;
+}
+
+.card {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  inset: 0 0 0 0;
+  background: transparent;
+  transform: scale(0);
+  transition: all 500ms ease-in-out;
+  pointer-events: all;
+}
+
+.card.active {
+  transform: scale(1);
+}
+
+.card-details {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1000px rgba(193, 199, 208, 0.9);
+  margin: 0 auto;
+  pointer-events: all;
+  width: 95%;
+  max-width: 380px;
+  padding-block: 1.5%;
+  padding-inline: 4%;
+  text-align: start;
+}
+
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #172b4d;
+  margin-bottom: 10px;
+  text-align: start;
+}
+
+.card-canopy {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  margin-top: -2px;
+  margin-bottom: 10px;
+  margin-left: -30px;
+}
+
+.card-item {
+  font-family: 'Poppins', sans-serif;
+  color: #7a869a;
+  font-weight: 600;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.can-card {
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  color: #344563;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.card-img {
+  width: 100%;
+  height: 260px;
+  margin-bottom: -5px;
+}
+
+.card-image {
+  display: none;
+}
+
+.card-inform {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  width: 100%;
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+  margin-block: 10px;
+  color: rgba(52, 69, 99, 1);
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-button-links {
+  margin-left: 0;
+  padding: 0;
+}
+
+.card-links {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(235, 236, 240, 1);
+}
+
+.card-link-visible,
+.card-link-hidden {
+  display: flex;
+  flex-direction: row;
+  margin-left: -35px;
+  margin-bottom: 15px;
+  color: #6070ff;
+}
+
+.card-link {
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #396df2;
+  background: #ebebff;
+  width: fit-content;
+  padding: 4px 8px;
+  border-radius: 8px;
+  margin-right: -5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.card-button {
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 15px;
+  background: #fff;
+  color: #396df2;
+  border: 1px solid #396df2;
+  border-radius: 10px;
+  padding: 7px 11.5px;
+  margin-right: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+}
+
+.card-button:hover,
+.card-button:focus {
+  background-color: #396df2;
+  color: #fff;
+}
+
+.card-button img {
+  width: 20px;
+  margin-left: 2px;
+}
+
+.close-card {
+  position: absolute;
+  border: none;
+  outline: none;
+  background: none;
+  color: #67798e;
+  font-size: 26px;
+  top: 5px;
+  right: 20px;
 }
 
 .about-me {
@@ -413,6 +594,7 @@ main {
   font-weight: 500;
   font-size: 20px;
   border-bottom: 1px solid #dfe1e6;
+  margin-left: -40px;
   margin-block: 25px 15px;
   padding: 18px 10px;
 }
@@ -427,7 +609,7 @@ main {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  width: 150%;
+  width: 120%;
   margin-inline: 10px;
   background: #f7f7f9;
   border-radius: 8px;
@@ -444,7 +626,7 @@ main {
   color: #abc7c3;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 850px) {
   .columns {
     background: #e5e5e5;
     padding-bottom: 7rem;
@@ -463,7 +645,7 @@ main {
     box-shadow: 0 0 20px 20px rgb(167, 174, 255);
   }
 
-  .row {
+  .switch {
     flex-direction: row;
   }
 
@@ -476,7 +658,7 @@ main {
     height: auto;
   }
 
-  .row .column-detail {
+  .switch .column-detail {
     margin-left: 40px;
     width: 50%;
   }
@@ -513,8 +695,71 @@ main {
     width: 122px;
   }
 
+  .card-button img {
+    width: 20px;
+    margin-left: 2px;
+  }
+
   .feature-items li img {
     margin-bottom: 10px;
+  }
+
+  .card {
+    padding-block: 10px;
+  }
+
+  .card-details {
+    max-width: 800px;
+    padding-inline: 4%;
+    padding-block: 15px;
+    height: 97%;
+  }
+
+  .card-canopy {
+    margin-block: 10px;
+  }
+
+  .card-images .image-large {
+    display: block;
+    width: 700px;
+    max-height: 320px;
+    margin-top: 15px;
+  }
+
+  .card-title {
+    margin-top: 20px;
+    margin-bottom: -7px;
+  }
+
+  .card-inform {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-description {
+    width: 60%;
+    margin-right: 5px;
+  }
+
+  .close-card {
+    top: 5px;
+  }
+
+  .card-links {
+    margin-top: 15px;
+  }
+
+  .card-img,
+  .show {
+    display: none;
+  }
+
+  .card-button {
+    padding: 6px 15px;
+  }
+
+  .hidden {
+    display: block;
   }
 }
 
