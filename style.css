@@ -382,7 +382,6 @@ main {
   justify-content: center;
   inset: 0 0 0 0;
   background: transparent;
-  backdrop-filter: blur(8px);
   transform: scale(0);
   transition: all 500ms ease-in-out;
   pointer-events: all;
@@ -404,6 +403,7 @@ main {
   box-shadow: 0 0 0 1000px rgba(193, 199, 208, 0.9);
   margin: 0 auto;
   pointer-events: all;
+  width: 96%;
   max-width: 400px;
   padding-block: 3%;
   padding-inline: 4%;
@@ -477,6 +477,7 @@ main {
   margin-left: -30px;
   color: #396df2;
   margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 .card-link {
@@ -501,8 +502,9 @@ main {
   color: #396df2;
   border: 1px solid #396df2;
   border-radius: 10px;
-  padding: 5px 11.5px;
+  padding: 7px 11.5px;
   margin-right: 5px;
+  margin-top: 15px;
   cursor: pointer;
   transition: all 500ms ease-in-out;
 }
@@ -720,6 +722,7 @@ main {
 
   .card-links-visible {
     margin-bottom: 0;
+    margin-left: -20px;
   }
 
   .card-images {
@@ -755,7 +758,7 @@ main {
   }
 
   .card-button {
-    padding: 2px 15px;
+    padding: 6px 15px;
   }
 
   .hidden {
