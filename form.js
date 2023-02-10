@@ -17,8 +17,6 @@ form.addEventListener('submit', (event) => {
     }
   });
 
-  const name = document.querySelector('#name');
-
   function storageAvailable(type) {
     let storage;
     try {
