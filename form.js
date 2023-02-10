@@ -1,3 +1,6 @@
+"use strict";
+const form = document.querySelector('.mobile-form');
+
 const formSubmit = (input) => {
     if (input === input.toLowerCase()) return true;
     return false;
