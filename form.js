@@ -56,3 +56,4 @@ form.addEventListener('submit', (event) => {
     form.email.addEventListener('change', updateFormData);
     form.message.addEventListener('change', updateFormData);
   
+const checkData = () => { let name = ''; let email = ''; let message = ''; if (JSON.parse(localStorage.getItem('formInput')) === null) { name = ''; email = ''; message = ''; } else { ({ name, email, message } = JSON.parse(localStorage.getItem('formInput'))); } if (name !== 'empty' || email !== 'empty' || message !== 'empty') { form.name.value = name; form.email.value = email; form.message.value = message; } }; document.addEventListener('DOMContentLoaded', () => { checkData(); }); } 
