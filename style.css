@@ -853,3 +853,42 @@ main {
     margin-inline: auto;
   }
 }
+
+#email.error{
+  border: 5px solid rgb(255, 49, 49);
+  border-radius: 8px;
+}
+
+.error-message {
+  font-size: 15px;
+  font-weight: 800;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  border: 3px solid rgb(255, 49, 49);
+  border-radius: 8px;
+  padding: 10px 8px;
+  color: rgb(255, 49, 49);
+  transform: scale(0);
+  transition: all 250ms ease-in-out;
+  position: absolute;
+}
+
+.error-message p {
+  color: rgb(255, 49, 49);
+  margin-bottom: 0;
+}
+
+.error-message p span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.error-message.error {
+  position: relative;
+  transform: scale(1);
+}
+
+.fa-circle-exclamation {
+  color:rgb(255, 49, 49);
+  font-size: 24px;
+}
