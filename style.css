@@ -854,7 +854,7 @@ main {
   }
 }
 
-#email.error{
+#email.error {
   border: 3px solid rgb(255, 49, 49);
   border-radius: 8px;
 }
@@ -889,6 +889,6 @@ main {
 }
 
 .fa-circle-exclamation {
-  color:rgb(255, 49, 49);
+  color: rgb(255, 49, 49);
   font-size: 24px;
 }
