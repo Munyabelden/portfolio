@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="style.css">
         <script src="nav.js" defer></script>
         <script  src="index.js" defer></script>
+        <script  src="form.js" defer></script>
         <title>Belden Full Stack Developer</title>
     </head>
 
@@ -285,6 +286,9 @@
             <input type="email" name="email" id="email" placeholder="Enter your email" required>    
             <label for="message" class="sr-only"></label>
             <textarea name="message" id="message" cols="30" rows="10" maxlength="500" placeholder="Write your message here" required></textarea>
+            <div class="error-message" id="error">
+                <p ><span>Form not submitted<i class="fa-solid fa-circle-exclamation"></i></span> <br> Your email needs to be lower case(small letters)</p>
+            </div>
             <button type="submit" class="form-button">Get in touch</button>
          </form>
 
