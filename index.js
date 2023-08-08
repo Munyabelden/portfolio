@@ -79,56 +79,57 @@ const startingPoint = document.querySelector('.intro');
  function createElement() {
   startingPoint.insertAdjacentHTML(
     'afterend',
-    `  <div class="card">
-          <div class="card-details">
-            <div class="card-intro">
-                <div class='card-head'>
-                    <h2 class='card-title'></h2>
-                    <button data-targets=".card" type="button" class="close-card" >&times;</button>
-                </div>
-                    <ul class="card-canopy">
-                        <li class="feature can-card"></li>
-                        <li class=" background card-item"></li>
-                        <li class="year card-item"> </li>
-                    </ul>
-                <div class="card-images">  
-                  <img class="image-small card-img" src="" alt="snapshot"></img>
-                  <img class="image-large hidden" src="" alt="snapshot"></img>
-                </div>
+    ` <div class="card">
+        <div class="card-details">
+          <div class="card-intro">
+              <div class='card-head'>
+                  <h2 class='card-title'></h2>
+                  <button data-targets=".card" type="button" class="close-card" >&times;</button>
               </div>
-              <div class="card-inform">
-               <div class="card-description">
-                  <p class="show card-description-small">
-                    </p>
-                    <p class="information hidden">
-                    </p>  
-                </div>
-                <div class="card-button-links">          
-                    <div class="card-links">
-                      <ul class=" card-link-visible ">
-                          <li class="card-link-1 card-link"></li>
-                          <li class="card-link-2 card-link"></li>
-                          <li class="card-link-3 card-link"></li>
-                      </ul>
-                      <ul class="card-link-hidden ">
-                          <li class="card-link-4 card-link hidden"></li>
-                          <li class="card-link-5 card-link hidden""></li>
-                          <li class="card-link-6 card-link hidden"></li>
-                      </ul>
-                    </div>
-                    <div class='buttons'>
-                        <a href='' target="_blank"class="btn link live card-button">See Live <img src="./images/git.svg" alt="github ico">
-                        </a>
-                        <a href='' target="blank" class="btn link source card-button">See Source <img src='./images/Live.svg' alt="live icon">
-                        </a>
-                    </div>
-                 </div>  
-             </div>       
-          </div>
-        </div>`
+                  <ul class="card-canopy">
+                      <li class="feature can-card"></li>
+                      <li class=" background card-item"></li>
+                      <li class="year card-item"> </li>
+                  </ul>
+              <div class="card-images">  
+                <img class="image-small card-img" src="" alt="snapshot"></img>
+                <img class="image-large hidden" src="" alt="snapshot"></img>
+              </div>
+            </div>
+            <div class="card-inform">
+              <div class="card-description">
+                <p class="show card-description-small">
+                  </p>
+                  <p class="information hidden">
+                  </p>  
+              </div>
+          <div class="card-button-links">          
+            <div class="card-links">
+              <ul class=" card-link-visible ">
+                <li class="card-link-1 card-link"></li>
+                <li class="card-link-2 card-link"></li>
+                <li class="card-link-3 card-link"></li>
+              </ul>
+              <ul class="card-link-hidden ">
+                <li class="card-link-4 card-link hidden"></li>
+                <li class="card-link-5 card-link hidden""></li>
+                <li class="card-link-6 card-link hidden"></li>
+              </ul>
+            </div>
+            <div class='buttons'>
+              <a href='' target="_blank"class="btn link live card-button">
+                See Live <img src="./images/git.svg" alt="github ico">
+              </a>
+              <a href='' target="blank" class="btn link source card-button">
+                See Source <img src='./images/Live.svg' alt="live icon">
+              </a>
+            </div>
+          </div>  
+        </div>       
+      </div>
+    </div>`
   );
 }
-
 
 document.addEventListener('DOMContentLoaded', () => {
   createElement();
@@ -159,85 +160,33 @@ document.addEventListener('DOMContentLoaded', () => {
     background.classList.remove('active');
   };
 
-  popUpCard.forEach((button) => {
+  function updateCardContent(index) {
+    const cardData = cardArray[index];
+    name.textContent = cardData.name;
+    feature.textContent = cardData.feature;
+    title.textContent = cardData.background;
+    year.textContent = cardData.year;
+    imageSmall.setAttribute('src', `${cardData.image}`);
+    imageLarge.setAttribute('src', `${cardData.large}`);
+    description.textContent = `${cardData.description}`;
+    information.textContent = `${cardData.message}`;
+    code1.textContent = `${cardData.html}`;
+    code2.textContent = `${cardData.css}`;
+    code3.textContent = `${cardData.javascript}`;
+    code4.textContent = `${cardData.ruby}`;
+    code5.textContent = `${cardData.bootstrap}`;
+    code6.textContent = `${cardData.github}`;
+
+    live.setAttribute('href', cardData.linkLive);
+    source.setAttribute('href', cardData.linkSource);
+
+    card.classList.add('active');
+    background.classList.add('active');
+ }
+
+  popUpCard.forEach((button, index) => {
     button.addEventListener('click', () => {
-      if (button.id === '0') {
-        name.textContent = `${cardArray[0].name}`;
-        feature.textContent = `${cardArray[0].feature}`;
-        title.textContent = `${cardArray[0].background}`;
-        year.textContent = `${cardArray[0].year}`;
-        imageSmall.setAttribute('src', `${cardArray[0].image}`);
-        imageLarge.setAttribute('src', `${cardArray[0].large}`);
-        description.textContent = `${cardArray[0].description}`;
-        information.textContent = `${cardArray[0].message}`;
-        code1.textContent = `${cardArray[0].html}`;
-        code2.textContent = `${cardArray[0].css}`;
-        code3.textContent = `${cardArray[0].javascript}`;
-        code4.textContent = `${cardArray[0].ruby}`;
-        code5.textContent = `${cardArray[0].bootstrap}`;
-        code6.textContent = `${cardArray[0].github}`;
-        live.setAttribute('href', `${cardArray[0].linkLive}`);
-        source.setAttribute('href', `${cardArray[0].linkSource}`);
-        card.classList.add('active');
-        background.classList.add('active');
-      } else if (button.id === '1') {
-        name.textContent = `${cardArray[1].name}`;
-        feature.textContent = `${cardArray[1].feature}`;
-        title.textContent = `${cardArray[1].background}`;
-        year.textContent = `${cardArray[1].year}`;
-        imageSmall.setAttribute('src', `${cardArray[1].image}`);
-        imageLarge.setAttribute('src', `${cardArray[1].large}`);
-        description.textContent = `${cardArray[1].description}`;
-        information.textContent = `${cardArray[1].message}`;
-        code1.textContent = `${cardArray[1].html}`;
-        code2.textContent = `${cardArray[1].css}`;
-        code3.textContent = `${cardArray[1].javascript}`;
-        code4.textContent = `${cardArray[1].ruby}`;
-        code5.textContent = `${cardArray[1].bootstrap}`;
-        code6.textContent = `${cardArray[1].github}`;
-        live.setAttribute('href', `${cardArray[1].linkLive}`);
-        source.setAttribute('href', `${cardArray[1].linkSource}`);
-        card.classList.add('active');
-        background.classList.add('active');
-      } else if (button.id === '2') {
-        name.textContent = `${cardArray[2].name}`;
-        feature.textContent = `${cardArray[2].feature}`;
-        title.textContent = `${cardArray[2].background}`;
-        year.textContent = `${cardArray[2].year}`;
-        imageSmall.setAttribute('src', `${cardArray[2].image}`);
-        imageLarge.setAttribute('src', `${cardArray[2].large}`);
-        description.textContent = `${cardArray[2].description}`;
-        information.textContent = `${cardArray[2].message}`;
-        code1.textContent = `${cardArray[2].html}`;
-        code2.textContent = `${cardArray[2].css}`;
-        code3.textContent = `${cardArray[2].javascript}`;
-        code4.textContent = `${cardArray[2].ruby}`;
-        code5.textContent = `${cardArray[2].bootstrap}`;
-        code6.textContent = `${cardArray[2].github}`;
-        live.setAttribute('href', `${cardArray[2].linkLive}`);
-        source.setAttribute('href', `${cardArray[2].linkSource}`);
-        card.classList.add('active');
-        background.classList.add('active');
-      } else if (button.id === '3') {
-        name.textContent = `${cardArray[3].name}`;
-        feature.textContent = `${cardArray[3].feature}`;
-        title.textContent = `${cardArray[3].background}`;
-        year.textContent = `${cardArray[3].year}`;
-        imageSmall.setAttribute('src', `${cardArray[3].image}`);
-        imageLarge.setAttribute('src', `${cardArray[3].large}`);
-        description.textContent = `${cardArray[3].description}`;
-        information.textContent = `${cardArray[3].message}`;
-        code1.textContent = `${cardArray[3].html}`;
-        code2.textContent = `${cardArray[3].css}`;
-        code3.textContent = `${cardArray[3].javascript}`;
-        code4.textContent = `${cardArray[3].ruby}`;
-        code5.textContent = `${cardArray[3].bootstrap}`;
-        code6.textContent = `${cardArray[3].github}`;
-        live.setAttribute('href', `${cardArray[3].linkLive}`);
-        source.setAttribute('href', `${cardArray[3].linkSource}`);
-        card.classList.add('active');
-        background.classList.add('active');
-      }
+      updateCardContent(index);
     });
   });
 
